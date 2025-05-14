@@ -1,0 +1,169 @@
+/* General Reset and Base Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+}
+nav {
+  background-color: #333;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffa500;
+}
+
+
+/* Main Container: Flex Layout */
+.resume-container {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+  background-color: #002b5b;
+  color: white;
+  width: 400px;
+  flex-shrink: 0;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 300px; /* Size of the profile image */
+  height:300px; /* Same as width to make it round */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures image fills the circle */
+  margin-right: 10px; /* Space between image and text */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.sidebar a {
+  color: #7bc9ff;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-top: 25px;
+  border-bottom: 1px solid #ffffff33;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex-grow: 1;
+  padding: 40px 60px;
+  background-color: #ffffff;
+  max-width: calc(100% - 300px);
+  box-sizing: border-box;
+}
+
+.main-content h2 {
+  color: #002b5b;
+  font-size: 24px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.main-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.main-content li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content h2 {
+    font-size: 20px;
+  }
+
+  .sidebar h1 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+}

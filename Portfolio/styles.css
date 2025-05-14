@@ -1,0 +1,239 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #c19ee6, #7a7c80);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffa500;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 30px;
+}
+
+
+
+/* Profile Image in Top Left After Name */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* For the header text */
+.header .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 2.5rem; /* Adjust the size of the name */
+  margin: 0;
+
+  padding: 0;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.header button a {
+  padding: 15px 30px;
+  background-color: #ff4c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.header button a:hover {
+  background-color: #ff2b00;
+}
+
+/* Vision Carousel */
+.vision-carousel {
+  margin-top: 50px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide {
+  position: absolute;
+  opacity: 0;
+  font-size: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-slide {
+  animation: fadeIn 8s infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  60% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Skills Section */
+#skills {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2rem;
+  animation: fadeIn 2s ease-out;
+}
+
+#skills ul li {
+  background-color: #ff4c00;
+  color: white;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.intro {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding: 20px 20px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.profile-photo {
+  width: 300px; /* Size of the profile image */
+  height:300px; /* Same as width to make it round */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures image fills the circle */
+  margin-right: 10px; /* Space between image and text */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
+}
+
+.intro-text {
+  max-width: 600px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.intro-text button a {
+  text-decoration: none;
+  color: white;
+}
+
+.intro-text button {
+  padding: 25px 25px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#skills ul li:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer button a {
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+footer button a:hover {
+  background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
